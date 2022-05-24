@@ -16,12 +16,6 @@ $arg1 = "";
 if (!empty($argv[1])) {
   $arg1 = $argv[1];
 }
-$exc = 'ps -eo pid,cmd | grep "/index-cli.php ' . $arg1 . '"';
-exec($exc, $result);
-if (count($result) > 4 || count($result) == 0) {
-  error_log("index-cli.php process is not completed");
-  die(count($result) . ' not end process');
-}
 
 $autoloader = require_once 'autoload.php';
 
@@ -29,8 +23,6 @@ $kernel = new DrupalKernel('prod', $autoloader);
 if (empty($argv[1])) {
   die("EMPTY ARGUMENTS");
 }
-
-
 
 $_SERVER['REQUEST_URI'] = $arg1;
 $_SERVER['DOCUMENT_ROOT'] = __DIR__;
