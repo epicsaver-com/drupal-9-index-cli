@@ -2,6 +2,6 @@
 It's add hock solution cli start action  for drupal 9. it made like as cron.php drupal 7 
 
 # How to start
-/usr/bin/php path_to_drupal_dir/index-cli.php /controllerName/actionName
+/usr/bin/php path_to_drupal_dir/index-cli.php /relative_url_controller_action
 
 <a href="https://epicsaver.com">epicsaver.com</a>
