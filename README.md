@@ -1,5 +1,5 @@
 # drupal-9-index-cli
-It's add hock solution cli start action  for drupal 9. it made like as cron.php drupal 7 
+It's ad hock solution cli start action  for drupal 9. it made like as cron.php drupal 7 
 
 # How to start
 /usr/bin/php path_to_drupal_dir/index-cli.php /relative_url_controller_action
